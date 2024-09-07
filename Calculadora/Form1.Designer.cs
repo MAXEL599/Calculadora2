@@ -52,6 +52,9 @@
             this.btnX = new System.Windows.Forms.Button();
             this.btnDivicion = new System.Windows.Forms.Button();
             this.btnHistorial = new System.Windows.Forms.Button();
+            this.btndibujo = new System.Windows.Forms.Button();
+            this.btnY = new System.Windows.Forms.Button();
+            this.btnX2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtOperaciones
@@ -208,7 +211,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(654, 321);
+            this.btnDelete.Location = new System.Drawing.Point(648, 321);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(153, 39);
             this.btnDelete.TabIndex = 17;
@@ -262,18 +265,49 @@
             // 
             // btnHistorial
             // 
-            this.btnHistorial.Location = new System.Drawing.Point(12, 338);
+            this.btnHistorial.Location = new System.Drawing.Point(12, 342);
             this.btnHistorial.Name = "btnHistorial";
             this.btnHistorial.Size = new System.Drawing.Size(166, 39);
             this.btnHistorial.TabIndex = 23;
             this.btnHistorial.Text = "Historial";
             this.btnHistorial.UseVisualStyleBackColor = true;
             // 
+            // btndibujo
+            // 
+            this.btndibujo.Location = new System.Drawing.Point(251, 395);
+            this.btndibujo.Name = "btndibujo";
+            this.btndibujo.Size = new System.Drawing.Size(42, 32);
+            this.btndibujo.TabIndex = 24;
+            this.btndibujo.Text = "X";
+            this.btndibujo.UseVisualStyleBackColor = true;
+            // 
+            // btnY
+            // 
+            this.btnY.Location = new System.Drawing.Point(251, 349);
+            this.btnY.Name = "btnY";
+            this.btnY.Size = new System.Drawing.Size(42, 32);
+            this.btnY.TabIndex = 25;
+            this.btnY.Text = "Y";
+            this.btnY.UseVisualStyleBackColor = true;
+            // 
+            // btnX2
+            // 
+            this.btnX2.Location = new System.Drawing.Point(251, 444);
+            this.btnX2.Name = "btnX2";
+            this.btnX2.Size = new System.Drawing.Size(42, 32);
+            this.btnX2.TabIndex = 26;
+            this.btnX2.Text = "X^2";
+            this.btnX2.UseVisualStyleBackColor = true;
+            this.btnX2.Click += new System.EventHandler(this.btnX2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(915, 730);
+            this.Controls.Add(this.btnX2);
+            this.Controls.Add(this.btnY);
+            this.Controls.Add(this.btndibujo);
             this.Controls.Add(this.btnHistorial);
             this.Controls.Add(this.btnDivicion);
             this.Controls.Add(this.btnX);
@@ -331,6 +365,9 @@
         private System.Windows.Forms.Button btnX;
         private System.Windows.Forms.Button btnDivicion;
         private System.Windows.Forms.Button btnHistorial;
+        private System.Windows.Forms.Button btndibujo;
+        private System.Windows.Forms.Button btnY;
+        private System.Windows.Forms.Button btnX2;
     }
 }
 
